@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu {
+            position: relative;
+            display: block;
+            cursor: pointer;
+            gap: 70px;
+            text-align: center;
+            background-color: rgb(181, 176, 176);
+        }
+        .chinh {
+            display: block;
+            margin-left: 16%;
+        }
+
+        .chinh span {
+            font-size: 30px;
+            position: relative;
+        }
+
+        .menu span::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: black;
+            transition: width 0.3s ease;
+        }
+
+        .menu span:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="chinh">
+        <div class="menu">
+            <span>Home</span>
+        </div>
+        <div class="menu">
+            <span>Shop</span>
+        </div>
+        <div class="menu">
+            <span>Product</span>
+        </div>
+        <div class="menu">
+            <span>New</span>
+        </div>
+        <div class="menu">
+            <span>Buy Now</span>
+        </div>
+        <div class="menu">
+            <span>Tìm Kiếm</span>
+        </div>
+    </div>
+    <a href="baitaap.html">Back</a>
+</body>
+</html>

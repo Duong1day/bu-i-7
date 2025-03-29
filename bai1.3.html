@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ngoai {
+            position: relative;
+            width: 300px;
+            height: 450px;
+        }
+        .truoc img {
+            width: 300px;
+            height: 450px;
+            transition: opacity 0.5s ease-in-out; 
+        }
+        .sau {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0; 
+            transition: opacity 0.5s ease-in-out; 
+        }
+        .sau img{
+            width: 300px;
+            height: 450px;
+        }
+        .ngoai:hover .truoc img {
+            opacity: 0;
+        }
+
+        .ngoai:hover .sau {
+            opacity: 1;
+        }
+        .ngoai:hover .truoc p{
+            opacity: 0;
+        }
+        h3 {
+            text-align: center;
+        }
+        .chinh{
+            display: flex;
+            gap: 40px;
+        }
+    </style>
+</head>
+<body>
+    <a href="baitaap.html">Back</a>
+    <div class="chinh">
+        <div class="ngoai">
+            <div class="truoc">
+                <img src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/11/broken_6.jpg" alt="Image 1">
+                <h3>Broken T Shirt</h3>
+                <p>Men,T shirts</p>
+            </div>
+            <div class="sau">
+                <img src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/11/broken_2-820x1016.jpg" alt="Image 2">
+                <h3>Broken T Shirt</h3>
+                <p>Add to cart</p>
+            </div>
+        </div>
+        <div class="ngoai">
+            <div class="truoc">
+                <img src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/11/knickerboxer_7.jpg" alt="Image 1">
+                <h3>Broken T Shirt</h3>
+                <p>Men,Swaetes</p>
+            </div>
+            <div class="sau">
+                <img src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/11/knickerboxer_1.jpg" alt="Image 2">
+                <h3>Broken T Shirt</h3>
+                <p>Add to cart</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
